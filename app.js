@@ -8,8 +8,9 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 
 // switch cookie parser on
-const cookieParser = require("cookie-parser");
-app.use(cookieParser());
+// not needed since 1.5.0 of cookie-session
+// const cookieParser = require("cookie-parser");
+// app.use(cookieParser());
 
 // sessions
 const session = require("express-session");
