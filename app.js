@@ -24,7 +24,7 @@ app.use(
     resave: true,
     saveUninitialized: true,
     store: new MongoStore({
-      url: "mongodb://localhost:27017/myTestSession"
+      url: "mongodb://127.0.0.1:27017/myTestSession"
     })
   })
 );
